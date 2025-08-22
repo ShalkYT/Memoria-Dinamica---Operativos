@@ -3,7 +3,6 @@
  * Autor: Andres Eduardo Meneses Rincon
  * Materia: Sistemas Operativos
  * Tema: Memoria dinamica
- * Objetivo: Crear 2 array dinamicos de tipo char y introducir informacion en estos
 ***************************************************************************************/
 
 #include <stdio.h>
@@ -13,8 +12,8 @@
 int main(){
 
     char *p; // Se crea un puntero 
-    char *q; // Se crea otro puntero (Si se asigna a NULL habra un error de core dumped)
-    printf("Address of p = %s\n", p); // Se imprime por consola la direccion de memoria del puntero p
+    char *q; // Se crea otro puntero (Si se asigna a NULL habra un error de core dumped ya que no le asignaremos memoria ni con calloc ni malloc)
+    printf("Address of p = %s \n", p); // Se imprime por consola la direccion de memoria del puntero p
 
     strcpy(p,"Hello, i'm the best in Operating Systems!!!"); // Se copia en p el valor de la string
     printf("%s\n",p); // Se imprime por consola el valor de p
@@ -23,6 +22,5 @@ int main(){
     printf("String copied\n"); // Se anuncia por consola que ya se copio la string en q
     printf("%s\n",q); // Se imprime lo que hay en q
 
-    return 0;
-
+    return 0; // Fin del programa
 }

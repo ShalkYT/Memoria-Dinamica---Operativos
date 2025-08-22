@@ -13,8 +13,8 @@
 int main(){
     int n, i, *ptr = NULL, sum = 0; 
     /*
-    Creacion de variables:
-    n:  tamaño del arreglo dinamico
+    Creacion de variables de tipo int.
+    n: tamaño del arreglo dinamico
     i: variable para iterar el arreglo
     *ptr: apuntador a NULL
     sum: variable para guardar la suma
@@ -30,15 +30,14 @@ int main(){
     }
 
     printf("Enter Elements: \n"); // Impresion para notificar peticion de datos
-    for(i = 0; i< n;++i){
+    for(i = 0; i< n;++i){ // for para pedir informacion al usuario n veces (n es el valor anteriormente dado por el usuario)
         scanf("%d",ptr+i); // Funcion para leer los datos y guardarlos en el espacio i del apuntador 
         sum += *(ptr + i); // Suma de los valores introducidos por consola
     }
 
-    printf("Sum = %d",sum); // muestra por pantalla la suma de los valores ingresados
-    printf("\n");
+    printf("Sum = %d\n",sum); // muestra por pantalla la suma de los valores ingresados
     free(ptr); // Liberacion de memoria del arreglo dinamico
 
-    return 0;
+    return 0; // Fin del programa
 
 }

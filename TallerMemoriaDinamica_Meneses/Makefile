@@ -13,7 +13,7 @@ Reto2:
 	$(GCC) $(MODULOS) Reto2.c -o Reto2
 
 Reto3:
-	$(GCC) $(MODULOS) Reto3.c -o Reto4
+	$(GCC) $(MODULOS) Reto3.c -o Reto3
 
 Reto4:
 	$(GCC) $(MODULOS) Reto4.c -o Reto4
